@@ -10,3 +10,15 @@ CIA triad
 - confidentially
 - integrity
 - availablity
+
+
+### 9 Is Python Secured
+this can pass the test
+```
+python test eval.py "__import__('os').system('ls -la')"
+```
+
+more safer:
+```
+eval(string,{'__builtins__':{})
+```
